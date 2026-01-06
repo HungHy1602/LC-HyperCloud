@@ -1,15 +1,16 @@
 {
   "name": "lc-hypercloud",
   "private": true,
-  "packageManager": "pnpm@9.15.5",
+  "packageManager": "npm@10.5.2",
   "workspaces": [
     "BE",
     "FE"
   ],
   "scripts": {
-    "dev:be": "pnpm --filter lc-hypercloud-be dev",
-    "dev:fe": "pnpm --filter lc-hypercloud-fe dev",
-    "dev": "pnpm -r --parallel dev",
-    "build": "pnpm -r build"
+    "dev:be": "npm run -w lc-hypercloud-be dev",
+    "dev:fe": "npm run -w lc-hypercloud-fe dev",
+    "build:be": "npm run -w lc-hypercloud-be build",
+    "build:fe": "npm run -w lc-hypercloud-fe build",
+    "build": "npm run -ws build"
   }
 }
