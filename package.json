@@ -1,0 +1,15 @@
+{
+  "name": "lc-hypercloud",
+  "private": true,
+  "packageManager": "pnpm@9.15.5",
+  "workspaces": [
+    "BE",
+    "FE"
+  ],
+  "scripts": {
+    "dev:be": "pnpm --filter lc-hypercloud-be dev",
+    "dev:fe": "pnpm --filter lc-hypercloud-fe dev",
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build"
+  }
+}
